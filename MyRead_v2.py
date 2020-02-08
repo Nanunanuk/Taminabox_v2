@@ -12,18 +12,16 @@ import RPi.GPIO as GPIO
 
 pygame.mixer.init()
 
-def button_callback1(channel):
-    global songNr
-    global currentAlbum
-    global folderPath
-    songNr = songNr+1
-    pygame.mixer.music.load(folderPath + currentAlbum + '/' + lib[currentAlbum][songNr])
-    pygame.mixer.music.play()
+
 
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
-GPIO.setup(8, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # Set pin 8 to be an input pin and set initial value to be pulled low (off)
-GPIO.add_event_detect(8,GPIO.RISING,callback=button_callback1) # Setup event on pin 8 rising edge
+GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # forward
+GPIO.add_event_detect(10, GPIO.RISING,bouncetime=500)  # forward
+GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # backward
+GPIO.add_event_detect(12, GPIO.RISING,bouncetime=500)  # backward
+GPIO.setup(8, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # play/pause
+GPIO.add_event_detect(8, GPIO.RISING,bouncetime=500)  # play/pause
 
 continue_reading = True
 
@@ -54,6 +52,7 @@ previousAlbum=""
 noCount=0
 cardDetected=False
 songNr=0
+songRunning=True
 
 while continue_reading:
     
@@ -99,7 +98,10 @@ while continue_reading:
                         pygame.mixer.music.load(folderPath + albumKey + '/' + lib[albumKey][songNr])
                         pygame.mixer.music.play() 
                         print(albumKey + ' is playing')
-
+                        
+            
+            
+            
                 
             MIFAREReader.MFRC522_StopCrypto1()
         else:
@@ -110,3 +112,31 @@ while continue_reading:
             pygame.mixer.music.stop()
             print('No card!')
             cardDetected=False
+    
+    if GPIO.event_detected(10):
+        print('Button pressed')
+        if songNr<len(lib[currentAlbum])-1:
+            print('Song ' + str(songNr+2) + ' of ' + str(len(lib[currentAlbum])))
+            songNr = songNr+1
+            pygame.mixer.music.load(folderPath + currentAlbum + '/' + lib[currentAlbum][songNr])
+            pygame.mixer.music.play()
+
+    if GPIO.event_detected(12):
+        print('Button pressed')
+        if songNr>0:
+            print('Song ' + str(songNr) + ' of ' + str(len(lib[currentAlbum])))
+            songNr = songNr-1
+            pygame.mixer.music.load(folderPath + currentAlbum + '/' + lib[currentAlbum][songNr])
+            pygame.mixer.music.play()
+            
+    if GPIO.event_detected(8):
+        print('Button pressed')
+        
+        if songRunning==True:
+            print('Song paused')
+            pygame.mixer.music.pause()
+            songRunning=False
+        else:
+            print('Song playing')
+            pygame.mixer.music.unpause()
+            songRunning=True
