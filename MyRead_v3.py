@@ -17,12 +17,14 @@ time.sleep(2)
 
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
-GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # forward
-GPIO.add_event_detect(10, GPIO.RISING,bouncetime=500)  # forward
-GPIO.setup(12, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # backward
-GPIO.add_event_detect(12, GPIO.RISING,bouncetime=500)  # backward
-GPIO.setup(8, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # play/pause
-GPIO.add_event_detect(8, GPIO.RISING,bouncetime=500)  # play/pause
+GPIO.setup(31, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # forward
+GPIO.add_event_detect(31, GPIO.RISING,bouncetime=500)  # forward
+
+GPIO.setup(33, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # backward
+GPIO.add_event_detect(33, GPIO.RISING,bouncetime=500)  # backward
+
+GPIO.setup(29, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # play/pause
+GPIO.add_event_detect(29, GPIO.RISING,bouncetime=500)  # play/pause
 
 continue_reading = True
 
