@@ -26,6 +26,10 @@ GPIO.add_event_detect(33, GPIO.RISING,bouncetime=500)  # backward
 GPIO.setup(29, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) # play/pause
 GPIO.add_event_detect(29, GPIO.RISING,bouncetime=500)  # play/pause
 
+# Seting Pin for MOSFET
+GPIO.setup(40, GPIO.OUT)
+GPIO.output(40, GPIO.HIGH)
+
 continue_reading = True
 
 # Reading in Album database
