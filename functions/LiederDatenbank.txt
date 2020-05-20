@@ -1,0 +1,157 @@
+(dp0
+S'Zuckowski'
+p1
+(lp2
+S'01 Mein Weg Zur Schuke.mp3'
+p3
+aS'02 Hallo, Siehst du Mich.mp3'
+p4
+aS'03 Schulbus.mp3'
+p5
+aS'04 Alle Machen Fehler.mp3'
+p6
+aS'05 Rot und Gr\xc3\xa2n.mp3'
+p7
+aS'06 Es Ist Rot, Elfriede.mp3'
+p8
+aS"07 Was Zieh' Ichan_.mp3"
+p9
+aS'08 Asu der Traum.mp3'
+p10
+aS"09 Ich Hab' Mich Verlaufen.mp3"
+p11
+aS'10 Mein Platz im Auto Ist Hinten.mp3'
+p12
+aS'11 Zebrastreifen.mp3'
+p13
+aS'12 Zwischen Den Autos.mp3'
+p14
+aS'13 An Meinem Fahrrad Ist Alles Dran.mp3'
+p15
+aS'14 Wo Kein Gehweg Ist.mp3'
+p16
+aS'15 Heute Bleibt das Auto Stehn.mp3'
+p17
+aS'16 Linker Schuh, Rechter Schuh.mp3'
+p18
+asS'Buena Vista'
+p19
+(lp20
+S'01 Chan Chan.mp3'
+p21
+aS'02 De Camino a La Vereda.mp3'
+p22
+aS'03 El cuarto de Tula.mp3'
+p23
+aS'04 Pueblo Nuevo.mp3'
+p24
+aS'05 Dos Gardenias.mp3'
+p25
+aS'06 Y Tu Que Has Hecho.mp3'
+p26
+aS'07 Veinte Anos.mp3'
+p27
+aS'08 El Carretero.mp3'
+p28
+aS'09 Candela.mp3'
+p29
+aS'10 Amor de Loca Juventud.mp3'
+p30
+aS'11 Orgullecida.mp3'
+p31
+aS'12 Murmullo.mp3'
+p32
+aS'13 Buena Vista Social Club.mp3'
+p33
+aS'14 La Bayamesa.mp3'
+p34
+asS'Anne Kaffeekanne'
+p35
+(lp36
+S'01 Lied vom Wecken.mp3'
+p37
+aS'02 Vom Laufenlernen.mp3'
+p38
+aS'03 Das Katzentatzentanzspiel.mp3'
+p39
+aS'04 Zehn kleine Flederm\xc3\xa4use.mp3'
+p40
+aS'05 Schlaflied f\xc3\xbcr Anne.mp3'
+p41
+aS'06 Pinguin-Lied.mp3'
+p42
+aS'07 Anne Kaffeekanne.mp3'
+p43
+aS'08 Higgelty, Piggelty, Pop und Pu.mp3'
+p44
+aS'09 Leni Tanzbein.mp3'
+p45
+aS'10 Wem gibt er Elefant die Hand.mp3'
+p46
+aS'11 Kawuras - der Krebs.mp3'
+p47
+aS'12 Lioliola-Lied.mp3'
+p48
+asS'Pippi Langstr'
+p49
+(lp50
+S'1-01 Hej, Pippi Langstrumpf!.mp3'
+p51
+aS'1-02 Der allerbeste Karlsson auf der.mp3'
+p52
+aS'1-03 So will ich immer reisen.mp3'
+p53
+aS'1-04 \xc3\x84tsch, Pustekuchen, Madita!.mp3'
+p54
+aS'1-05 Ferien auf Saltkrokan.mp3'
+p55
+aS'1-06 Michel war ein Lausejunge.mp3'
+p56
+aS'1-07 Idas Sommerlied.mp3'
+p57
+aS'1-08 Faul sein ist wundersch\xc3\xb6n.mp3'
+p58
+aS'1-09 Fleischwurstlied.mp3'
+p59
+aS'1-10 Lottas Krachmacherlied.mp3'
+p60
+aS'1-11 Seer\xc3\xa4uber-Opa Fabian.mp3'
+p61
+aS'1-13 Kalle Blomquist, der Meisterdet.mp3'
+p62
+aS'1-14 Katzenlied.mp3'
+p63
+aS'1-15 Schlaft alle.mp3'
+p64
+asS'Piazzolla'
+p65
+(lp66
+S'01_Libertango.mp3'
+p67
+aS'02_Revirado.mp3'
+p68
+aS'03_Otono Porteno.mp3'
+p69
+aS'04_20 years ago.mp3'
+p70
+aS'05_Golazo.mp3'
+p71
+aS'06_Bandone\xc3\xb3n.mp3'
+p72
+aS'07_Tres minutos con la realidad.mp3'
+p73
+aS'08_Milonga del angel.mp3'
+p74
+aS'09_Tanguedia 1.mp3'
+p75
+aS'10_Tanguedia 2.mp3'
+p76
+aS'11_Tanguedia 3.mp3'
+p77
+aS'12_Vuelvo al sur.mp3'
+p78
+aS'13_Los suenos.mp3'
+p79
+aS'14_Adi\xc3\xb3s nonino.mp3'
+p80
+as.

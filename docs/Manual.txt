@@ -11,4 +11,38 @@
 
 7) 
 
+
+The python script MyRead_v3.py is automatically started with the startup of the system.
+	The script needs to be included in the /etc/rc.local with help of sudo nano /etc/rc.local
+	Here is the complete code of that file:
+	
+	#!/bin/sh -e
+	#
+	# rc.local
+	#
+	# This script is executed at the end of each multiuser runlevel.
+	# Make sure that the script will "exit 0" on success or any other
+	# value on error.
+	#
+	# In order to enable or disable this script just change the execution
+	# bits.
+	#
+	# By default this script does nothing.
+
+	# Print the IP address
+	_IP=$(hostname -I) || true
+	if [ "$_IP" ]; then
+	  printf "My IP address is %s\n" "$_IP"
+	fi
+	python /home/pi/SPI-Py/MFRC522-python/MyRead_v3.py &
+	(/etc/rpi-pc_shutdown.sh)&
+	exit 0
+	
+If the script is running can be checked with:
+	ps aux | grep -i python
+If the script is running the PID (Process ID) is the first number behind in the line.
+To stop the script just write the PID behind the this command:
+	sudo kill 
+
+
  
