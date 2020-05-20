@@ -1,0 +1,14 @@
+1) Install Raspbian on the Pi
+2) Control of Raspi via SSH or Remote-desctop
+3) Using installation instruction from codingworld
+4) Setting SPI to former version:
+	git clone https://github.com/lthiery/SPI-Py.git
+	git checkout 8cce26b9ee6e69eb041e9d5665944b88688fca68
+	sudo python setup.py install
+5) Changing SCK port in MFRC522.py from 22 to 11 and changing print 'text' to print('text') in all relevant documents of the MFRC522 folder
+
+6) Setting up a shared network drive using samba (https://www.patrickweber.info/raspberry-pi-netzwerk-ordner-teilen-mit-windows/)
+
+7) 
+
+ 
